@@ -1,0 +1,23 @@
+{
+  "name": "buildinganapi",
+  "version": "1.0.0",
+  "description": "* Setup an API with a project structure like:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlc/BuildingAnAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atlc/BuildingAnAPI/issues"
+  },
+  "homepage": "https://github.com/atlc/BuildingAnAPI#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.4"
+  }
+}
