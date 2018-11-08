@@ -4,7 +4,12 @@
   "description": "* Setup an API with a project structure like:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "node server/server.js && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -18,6 +23,17 @@
   "homepage": "https://github.com/atlc/BuildingAnAPI#readme",
   "dependencies": {
     "cors": "^2.8.4",
-    "express": "^4.16.4"
-  }
+    "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-scripts": "^2.1.1"
+  },
+  "devDependencies": {},
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
